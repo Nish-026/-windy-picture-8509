@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Permanent+Marker&family=Poppins:ital,wght@0,200;0,300;0,400;0,900;1,800;1,900&display=swap');
+
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+:brfore,:after{
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.v-center{
+    align-items: center;
+
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.header{
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    padding: 15px;
+}
+.header .item-left{
+/* background-color: yellow; */
+flex: 0 0 17%;
+}
+.header .logo{
+    font-size: 20px;
+    color:black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header .item-center{
+/* background-color: red; */
+flex: 0 0 66%;
+}
+.header .item-right{
+/* background-color: blue; */
+flex: 0 0 17%;
+}
+.header .menu > ul > li{
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 25px;
+
+}
+.header .menu > ul > li > a{
+    font-size: 15px;
+    font-weight: 500;
+    color:black;
+    position: relative;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+    
+}
+.header .menu > ul > li .sub-menu{
+    position: absolute;
+    z-index: 500;
+    background-color: rgb(218, 194, 206); /*for downscrool*/
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 20px 30px;
+  transition: all 0.5 ease;
+  margin-top: 25px;
+  opacity: 0;
+  visibility: hidden;
+
+}
+.header .menu > ul > li.menu-item-has-children:hover .sub-menu{
+    margin-top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.header .menu > ul > li .sub-menu > ul > li{
+    line-height: 1; /* content close to each other*/
+}
+.header .menu > ul > li .sub-menu > ul > li >a{
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 15px;
+    color: black;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.header .menu > ul > li .single-column-menu>{
+    min-width:280px ;
+    max-width: 350px;
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item> ul > li{
+line-height: 1;
+display: block;
+
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item> ul > li > a{
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 15px;
+    color: black;
+    transition: color 0.3s ease;
+
+
+}
+.header .menu > ul > li .sub-menu.mega-menu{
+  left: 50%;
+  transform: translate(-50%);    
+}
+/* .header .menu > ul > li .sub-menu.mega-menu{
+
+} */
+.header .menu > ul > li .sub-menu.mega-menu-column-4{
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item{
+flex: 0 0 25%;
+padding: 0 15px;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title{
+    font-size: 16px;
+    color: chartreuse;
+    font-weight: 500;
+    line-height: 1;
+    padding: 10px 0;
+}
+.header .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item img{
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+.header .menu > ul > li .sub-menu.mega-menu > .list-item> ul > li > a,
+.header .menu > ul > li .sub-menu > ul > li >a:hover,
+.header .menu > ul > li:hover > a{
+    color: black; /* change*/
+}
+
+/* banner section */
+.banner-section{
+    background-image: url("https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1669182865_magical-makeup-guide-web.gif");
+    height: 700px;
+    width: 100%;
+    display: block;
+
+}
+
+/* shop cate*/
+.sub-menu mega-menu mega-menu-column-4 {
+display: flex;
+} -->
+    </style>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="font.awesome.css">
+</head>
+<body>
+    
+ <!-- header start here -->
+ <header class="header">
+    <div class="container">
+    <div class="row v-center">
+     <div class="header-item item-left">
+        <div class="logo">
+          <a href="#">Violet Beaute</a>
+        </div>
+     </div>
+     <!-- menu statr here -->
+     <div class="header-item item-center">
+        <nav class="menu">
+         <ul class="menu-main">
+             <!-- 1 drowbox -->
+           <li class="menu-item-has-children">
+            <a href="#">SHOP-CATEGORIES <i class=" fa fa-angle-down"></i></a>
+            <div class="sub-menu mega-menu mega-menu-column-4">
+                <div class="list-item">
+                    <!-- 1st list  -->
+                   <h4 class="title">FACE MAKEUP</h4>
+                   <ul>
+                       <li><a href="#">Primer</a></li>
+                       <li><a href="#">Concealer</a></li>
+                       <li><a href="#">BB && CC Creams</a></li>
+                       <li><a href="#">Foundation</a></li>
+                       <li><a href="#">Compact</a></li>
+                       <li><a href="#">Loose Powder</a></li>
+                       <li><a href="#">Blush</a></li>
+                       <li><a href="#">Highlighters</a></li>
+                       <li><a href="#">Bronzer</a></li>
+                       <li><a href="#">Contour</a></li>
+                       <li><a href="#">Setting Sprays</a></li>
+                       <li><a href="#">Fixers</a></li>
+                       <li><a href="#">Sindoor</a></li>
+                       <li><a href="#">Bronzer</a></li>
+                   </ul>
+
+
+                   <!-- <h4 class="title">LIP MAKEUP</h4>
+                   <ul>
+                       <li><a href="#">Lipstick</a></li>
+                       <li><a href="#">Liquid Lipstick</a></li>
+                       <li><a href="#">Lip Crayon</a></li>
+                       <li><a href="#">Lip Liner</a></li>
+                       <li><a href="#">Lip Gloss</a></li>
+                       <li><a href="#">Lip Stains & Tints</a></li>
+                       <li><a href="#">Lip Balms & Treatments</a></li>
+                   
+                   </ul> -->
+                </div>
+                 <!-- scond col -->
+                 <div class="list-item">
+                    <h4 class="title">LIP MAKEUP</h4>
+
+                    <ul>
+                        <li><a href="#">Lipstick</a></li>
+                        <li><a href="#">Liquid Lipstick</a></li>
+                        <li><a href="#">Lip Crayon</a></li>
+                        <li><a href="#">Lip Liner</a></li>
+                        <li><a href="#">Lip Gloss</a></li>
+                        <li><a href="#">Lip Stains & Tints</a></li>
+                        <li><a href="#">Lip Balms & Treatments</a></li>
+                    </ul>
+
+                    <h4 class="title">NAILS</h4>
+
+                    <ul>
+                        <li><a href="#">Nail Polish</a></li>
+                        <li><a href="#">Gel Nail Polish</a></li>
+                        <li><a href="#">Matte Nail Polish</a></li>
+                        <li><a href="#">Top And Base Coat</a></li>
+                        <li><a href="#">Nail Polish Remover</a></li>
+                        <li><a href="#">Manicure & Pedicure Kits</a></li>
+                    </ul>
+                </div>
+
+                <!-- third row -->
+                <div class="list-item">
+                    <h4 class="title">BRUSHES & TOOLS</h4>
+
+                    <ul>
+                        <li><a href="#">Face Brushes</a></li>
+                        <li><a href="#">Eye Brushes</a></li>
+                        <li><a href="#"> Lip Brushes</a></li>
+                        <li><a href="#">Brushes Sets</a></li>
+                        <li><a href="#">Sponges & Applicators</a></li>
+                        <li><a href="#">Tweezers</a></li>
+                        <li><a href="#">Eyelash Curlers</a></li>
+                        <li><a href="#">Mirror</a></li>
+                        <li><a href="#">Makeup Pouches</a></li>
+                        <li><a href="#">Makeup Brush Cleaner</a></li>
+                        <li><a href="#">Sharpener</a></li>
+                    </ul>
+
+                    <!-- <h4 class="title">Furniture</h4>
+
+                    <ul>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                    </ul> -->
+                </div>
+            </div>
+           </li>
+             <!-- 1 drowbox end here -->
+
+               <!-- 2 drowbox -->
+           <li class="menu-item-has-children">
+            <a href="#">BRANDS<i class=" fa fa-angle-down"></i></a>
+            <div class="sub-menu mega-menu mega-menu-column-4">
+                <div class="list-item text-center">
+                    <img src="https://i.pinimg.com/736x/0b/ca/87/0bca871853abcd351303886c7062a3f3.jpg" alt="girl">
+                    <h4 class="title">Product-1</h4>
+                </div>  
+                <div class="list-item text-center">
+                    <img src="https://i.pinimg.com/736x/0b/ca/87/0bca871853abcd351303886c7062a3f3.jpg" alt="girl">
+                    <h4 class="title">Product-2</h4>
+                </div> 
+                <div class="list-item text-center">
+                    <img src="https://i.pinimg.com/736x/0b/ca/87/0bca871853abcd351303886c7062a3f3.jpg" alt="girl">
+                    <h4 class="title">Product-3</h4>
+                </div> 
+                <div class="list-item text-center">
+                    <img src="https://i.pinimg.com/736x/0b/ca/87/0bca871853abcd351303886c7062a3f3.jpg" alt="girl">
+                    <h4 class="title">Product-4</h4>
+                </div> 
+
+            </div>
+           </li>
+             <!-- 2 drowbox end here -->
+
+               <!-- 3 drowbox -->
+           <li class="menu-item-has-children">
+            <a href="#">OFFERS <i class=" fas fa-angle-down"></i></a>
+            <div class="sub-menu mega-menu mega-menu-column-4">
+                <div class="list-item">
+                     <!-- 1st list  -->
+                    <h4 class="title">Men's Fashion</h4>
+                    <ul>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                    </ul>
+                  <!-- 2nd list -->
+                  <h4 class="title">Men's Beauty</h4>
+                  <ul>
+                      <li><a href="#">Products List</a></li>
+                      <li><a href="#">Products List</a></li>
+                      <li><a href="#">Products List</a></li>
+                      <li><a href="#">Products List</a></li>
+                      <li><a href="#">Products List</a></li>
+                  </ul>
+                </div>
+                <div class="list-item">
+                    <h4 class="title">Women's Fashion</h4>
+
+                    <ul>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                    </ul>
+
+                    <h4 class="title">Furniture</h4>
+
+                    <ul>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                    </ul>
+                </div>
+
+                <div class="list-item">
+                    <h4 class="title">Home , Kitchen</h4>
+
+                    <ul>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                        <li><a href="#">Products List</a></li>
+                    </ul>
+
+
+                </div>
+                <div class="list-item">
+                    <img src="https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220__340.jpg" alt="Shop">
+                </div>
+
+            </div>
+           </li>
+
+             <!-- 3 drowbox end here -->
+
+           <li class="menu-item-has-children">
+            <a href="#">NEW <i class="fas fa-angle-down"></i></a>
+
+            <div class="sub-menu single-column-menu">
+                <ul>
+                    <li><a href="#">Standard Layout</a></li>
+                    <li><a href="#">Grid Layout</a></li>
+                    <li><a href="#">Single Post Layout</a></li>
+                </ul>
+            </div>
+
+           </li>
+           <li class="menu-item-has-children">
+            <a href="#">SPLURGE <i class="fas fa-angle-down"></i></a>
+            <div class="sub-menu single-column-menu">
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">404 Page</a></li>
+                </ul>
+            </div>
+
+           </li>
+           <li>
+            <a href="#">MAGAZINE</a>
+           </li>
+
+        <!-- last section -->
+           <li>
+            <a href="#">ELITE OFFERS</a>
+           </li>
+
+         </ul>
+        </nav>
+
+     </div>
+       <!-- menu end here -->
+     <div class="header-item item-right">
+      <a href="#"><i class="fas fa-search"></i></a>
+     </div>
+    </div>
+    </div>
+ </header>
+  <!-- header end here -->
+
+  <!-- banner start here -->
+   <section class="banner-section">
+
+   </section>
+   <!-- banner end here -->
+
+
+</body>
+<script src="script.js"></script>
+</html>
