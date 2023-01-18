@@ -55,6 +55,7 @@
 
 #main_content_area>#lower_half>.lf-1_pro1>div{
     width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     /* border: 2px solid rgb(0, 255, 42); */
     height: 600px;
 }
