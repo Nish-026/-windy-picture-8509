@@ -9,6 +9,167 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
 </head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    /* background-color: red; */
+    margin: auto;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+   
+}
+.footer-col{
+    width: 25%;
+    padding: 0,15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100px;
+    padding-top: 40px;
+    padding-left: 70px;
+}
+.footer2 .secnd{
+    /* border: 2px solid red; */
+    display: flex;
+    /* grid-template-columns: repeat(2,1fr); */
+    gap: 20px;
+}
+.footer2 .secnd  div a {
+    padding-left: 30px;
+    transition: all 0.3s ease;
+  
+}
+.footer2 .first{
+    display: flex;
+    /* margin-right: 100px; */
+    gap: 50px;
+}
+.footer2 .secnd div a:hover{
+    /* color: #ffffff; */
+    padding-right: 8px;
+}
+#social{
+    display: flex;
+}
+.feed{
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid red; */
+    padding-top: 10px;
+    
+}
+.table{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding-bottom: 50px;
+    background-color: #ECEFF1;
+}
+.td{
+    width: 200px;
+    /* border: 2px solid blue; */
+  
+    padding-bottom: 10px;
+}
+
+.k{
+    padding-top: 10px;
+    /* border: 2px solid yellowgreen; */
+}
+/* padding left */
+#a{
+    padding-left: 35px;
+}
+#b{
+    padding-left: 58px;
+}
+#c{
+    padding-left: 60px;
+}
+#d{
+    padding-left: 26px;
+}
+#e{
+    padding-left: 20px;
+}
+#f{
+    padding-left: 63px;
+}
+#g{
+    padding-left: 16px;
+}
+#h{
+    padding-left: 20px;
+}
+#i{
+    padding-left: 30px;
+}
+#j{
+    padding-left: 40px;
+}
+
+
+
+
+
+ 
+</style>
 <body>
    
     <table class="table">
@@ -109,7 +270,7 @@
     </footer>
     <footer class="footer2">
        <div class="first">
-        <h2>PAYMEN</h2>
+        <h2>PAYMENT</h2>
       <span>
         <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1499177379_tt.jpg" alt="">
       </span>
