@@ -1,0 +1,9 @@
+.card{
+    border: 1px solid red;
+    width:80%;
+    margin:auto;
+    display:flex;
+}
+.card>div{
+    border: 1px solid black;
+}
