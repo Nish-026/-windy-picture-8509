@@ -1,14 +1,13 @@
 #product_first_row{
-    border:1px solid red;
     width:80%;
     margin:auto;
     height: 50px;
     display:flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #product_first_row>div{
-    border:1px solid black;
     height: 50px;
     width: calc(100% / 4);
     text-align: center;
@@ -25,13 +24,9 @@
 #Filter,#Sort{
     width: 200px;
 }
-#Product_container{
-    border:1px solid red;
-}
 .card-list{
     width:70%;
     margin:auto;
-    border:1px solid red;
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px 20px;
