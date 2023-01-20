@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
+     <!-- Image slider single image-->
+
+     <div id="lh_img_slider"></div>
+
     <div>
+    
         <div id="product_first_row">
             <div id="search_box">
                 <div class="input-box">
 
-                    <input type="text" placeholder="Search" id="search_box_" onkeyup="sr()">
+                    <input type="text" placeholder="   Search" id="search_box_">
 
                     <span id="search_icon">
                         <i class="uil uil-search search-icon"></i>
@@ -23,7 +28,7 @@
             </div>
             <div id="filter">
                 <select id="Filter">
-                    <option value="">Filter By Price</option>
+                    <option value="">&nbsp Filter By Price</option>
                     <option value="Hundred">below Rs.100</option>
                     <option value="ThreeHundred">Rs.100-Rs.300</option>
                     <option value="Sixhundred">Rs.300-Rs.600</option>
@@ -32,7 +37,7 @@
             </div>
             <div id="sort">
                 <select id="Sort">
-                    <option value="">Sort</option>
+                    <option value="">&nbsp Sort</option>
                     <option value="Asc">Low-to-High</option>
                     <option value="Desc">High-to-Low</option>
                   </select>
@@ -40,6 +45,32 @@
         </div>
         <div id="Product_container"></div>
     </div>
+
+        <!-- LF-4 -->
+
+        <div class="lf-4">
+            <div>
+                <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247950_secure-payment.jpg" alt="">
+                <div>
+                    <h2>100% Secure Payment</h2>
+                    <p>All major credit & debit cards accepted.</p>
+                </div>
+            </div>
+            <div>
+               <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247975_beauty-assistant.jpg" alt="">
+               <div>
+                   <h2>Beauty Assistant</h2>
+                   <p>Tell me what you are looking for and i will work my magic to help you find your perfect match.</p>
+               </div>
+            </div>
+            <div>
+                <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247997_help-center.jpg" alt="">
+                <div>
+                    <h2>Help Center</h2>
+                    <p>Got a question? Look no further. Because FAQs or submit your query.</p>
+                </div>
+            </div>
+         </div>
 </body>
 </html>
 <script>
@@ -191,4 +222,55 @@ ProductSort.addEventListener("change",()=>{
         fetchAndRenderShampoo()
     }
 })
+
+
+
+ //   <!-- Image slider single image-->
+
+
+ let lh_img_slider_img=[
+
+"https://media6.ppl-media.com/mediafiles/ecomm/misc/1674106511_pu_webhp-1.jpg",
+
+"https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673874505_m-a-c_mini-sizes-2596x836.jpeg",
+
+"https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673707443_the-derma-co_night-serum-gel-2596x836.jpeg",
+
+"https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673762989_pilgrim_toners-2596x836.jpeg"
+]
+
+window.addEventListener("load", function(){
+start();
+})
+
+let i=0;
+
+function start(){
+
+let images= lh_img_slider_img;
+let main= document.getElementById("lh_img_slider")
+
+
+let img = document.createElement("img")
+ if(i==images.length){
+    i=0;
+ }
+ img.src=images[i]
+ main.append(img)
+ i++;
+
+ setInterval(function(){
+    if(i>=images.length){
+        i=0;
+    }
+    main.innerText=null;
+    let img =document.createElement("img")
+    img.src=images[i]
+    main.append(img)
+    i++;
+ }, 3000)
+
+}
+
+
 </script>
