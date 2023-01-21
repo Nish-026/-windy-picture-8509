@@ -11,9 +11,7 @@ body{
     width:30%;
     height: 200px;
     text-align: center;
-    background: #EECDA3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #c9a0ec;
 
 }
 #login-user-username,#login-user-passowrd,#login-user{
@@ -24,9 +22,9 @@ body{
     height:40x;
 }
 #login-user{
-    width:25%;
-    height:50x;
-    border-radius: 2px 2px 2px 2px;
+    width:20%;
+    height:100x;
+    border-radius: 5px 5px 5px 5px;
     border: none;
 }
 #login-user:hover{
