@@ -75,8 +75,9 @@ fetch("https://63c79a8a075b3f3a91cf3edd.mockapi.io/products/")
             e.preventDefault()
             var clicked=card.getAttribute("data-id");
             console.log(clicked);
-            localStorage.setItem("clicked",clicked
-            )
+            localStorage.setItem("clicked",clicked);
+            window.location.href = "individualProduct.html";
+
 
         })
     }
@@ -216,12 +217,6 @@ ProductSort.addEventListener("change",()=>{
     }
 })
 
-//////////////////////Individual Product Page ////////////////////////////////
-
-// let individualProduct = document.getElementById("product_image")
-// individualProduct.addEventListener("click",()=>{
-//     console.log("hi");
-// })
 
 
 
