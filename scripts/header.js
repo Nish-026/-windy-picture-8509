@@ -7,10 +7,11 @@ let hide_upper_nav = document.getElementById("upper-nav");
 let hide_search_btn = document.getElementById("search-btn");
 let profile_dropdown = document.getElementById("profile-dropdown-img");
 let profile_dropdown_div = document.getElementById("profile-dropdown-div");
+let open_login_page = document.getElementById("login-page");
+let reg_page = document.getElementById("reg-page");
 
 close_coupon_button.addEventListener("click", () => {
     coupon.style.display = "none";
-    console.log(coupon)
 })
 
 search_content.addEventListener("click", () => {
@@ -34,3 +35,11 @@ function profileDropdownclose(){
     profile_dropdown.style.visibility = "hidden";
     profile_dropdown_div.style.visibility = "hidden";
 }
+
+open_login_page.addEventListener("click", () => {
+    window.location.href = "./login.html";
+})
+
+reg_page.addEventListener("click", () => {
+    window.location.href = "./login.html";
+})
