@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="../css/Checkout.css">
 
 	<style>
+
 		#second {
 
 			height: 500px;
@@ -19,17 +20,22 @@
 
 			height: 500px;
 		}
-
-		#MainPage {
+		#top{
 			display: grid;
-			width: 80%;
-			grid-template-columns: 55% 30%;
-			grid-gap: 5%;
-			margin-top: 140px;
-			margin-left: auto;
-			margin-right: auto;
+			width: 100px;
+		}
 
-
+		
+		/* we om and krishna*/
+		#first{
+			width: 500px;
+			padding-top: 70px;
+			margin-right: 350px;
+			/* padding-right: 50px; */
+		}
+		#second{
+			/* background-color: brown; */
+			width: 480px;
 		}
 
 		#total {
@@ -42,6 +48,7 @@
 		}
 		#gif{
 			margin-left: 30%;
+			/* margin: 0; */
 		}
 		#msg{
 			display: none;
@@ -160,7 +167,7 @@
 
 <script>
 
-	let card_data = JSON.parse(localStorage.getItem("card"));
+	let card_data = JSON.parse(localStorage.getItem("card"))||[]
 	
 
 	var total = 0;
@@ -175,7 +182,7 @@
 	});
 
 	var btn = document.getElementById('bt');
-	//btn.addEventListener('click',makepay);
+	// btn.addEventListener('click',makepay); // remove comments
 	function makepay(e) {
 		e.preventDefault();
 
