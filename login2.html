@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Violet Beaute</title>
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/login2.css">
 </head>
 <body id="body">
     <!---------------------------------------------------- Header --------------------------------------------------------->
@@ -99,18 +99,20 @@
 
     <!------------------------------------- Login / Create Acount ------------------------------------------->
 
-    <button id="close-login" onclick="window.location.href = './header.html'">&#128473;</button>
-    <div class="login-signup-box">
-        <h2>Login/Create Account</h2>
-        <input type="number" placeholder="Enter Your Mobile No. *" id="input-mobile-number">
-        <button id="login-button" disabled>&#x2192;</button>
-        <p>or connect with</p>
-        <a href="#" class="fa fa-facebook">Facebook</a>
-        <a href="#" class="fa fa-google">Google</a>
+    <button id="close-login-otp" onclick="window.location.href = './header.html'">&#128473;</button>
+    <div class="login-otp-box">
+        <h2>Welcome Back</h2>
+        <p>OTP has been sent to your registered mobile number.</p>
+        <input type="number" placeholder="Enter OTP. *" id="input-otp-number">   
+        <span id="sec">15s</span> 
+        <a href="#">Login via Password</a>
+        <a href="#" id="resend-otp">Resend OTP</a>
+        <button id="submit-otp">SUBMIT</button>
+        <a href="./login.html" id="back">	&#8592; Back to Login</a>
     </div>
 
 
     <script src="./scripts/header.js"></script>
-    <script src="./scripts/login.js"></script>
+    <script src="./scripts/login2.js"></script>
 </body>
 </html>

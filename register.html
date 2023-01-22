@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Violet Beaute</title>
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/register.css">
 </head>
 <body id="body">
     <!---------------------------------------------------- Header --------------------------------------------------------->
@@ -97,20 +97,40 @@
        </div>
 
 
-    <!------------------------------------- Login / Create Acount ------------------------------------------->
+    <!------------------------------------- Register Account ------------------------------------------->
 
-    <button id="close-login" onclick="window.location.href = './header.html'">&#128473;</button>
-    <div class="login-signup-box">
-        <h2>Login/Create Account</h2>
-        <input type="number" placeholder="Enter Your Mobile No. *" id="input-mobile-number">
-        <button id="login-button" disabled>&#x2192;</button>
-        <p>or connect with</p>
-        <a href="#" class="fa fa-facebook">Facebook</a>
-        <a href="#" class="fa fa-google">Google</a>
+    <button id="close-reg" onclick="window.location.href = './header.html'">&#128473;</button>
+    <div id="register-form-div">
+        <form action="" id="registration-form">
+            <h2>Welcome Aboard</h2>
+            <p>Lets know you the better and make sure that you never lose access to your account.</p>
+            <input type="text" placeholder="Enter your name. *" id="name">
+            <input type="text" placeholder="Enter email. *" id="email">
+
+            <input type="number" placeholder="Mobile No. *" id="mobile_number">
+            <span id="verify-number">VERIFY</span>
+
+            <input type="number" placeholder="Enter OTP. *" id="otp">
+            <span id="seconds">15s</span>
+
+            <input type="password" placeholder="Create password. *" id="password">
+            <span id="show-password">SHOW</span>
+
+            <input type="radio" value="male" name="gender" checked>
+            <label for="male">Male</label>
+
+            <input type="radio" value="female" name="gender">
+            <label for="female">Female</label>
+
+            <input type="submit" value="SUBMIT">
+            <a href="./login.html">	&#8592; Back to Login</a>
+
+        </form>
     </div>
 
 
     <script src="./scripts/header.js"></script>
     <script src="./scripts/login.js"></script>
+    <script src="./scripts/register.js"></script>
 </body>
 </html>

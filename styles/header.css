@@ -223,6 +223,7 @@
     outline: none;
     border: none;
     border-bottom: 1px solid #ff147b;
+    font-size: 16px;
 }
 .search-popup > div > img{
     transform: translate(1000px, -35px);
