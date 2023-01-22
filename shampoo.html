@@ -87,7 +87,11 @@ fetchAndRenderShampoo()
 })
 
 function fetchAndRenderShampoo(){
-fetch("https://63c9038ec3e2021b2d4d8542.mockapi.io/products/")
+
+fetch("https://63cc2d559b72d2a88e0971b4.mockapi.io/shampoo/")
+
+//fetch("https://63cc38ee5c6f2e1d84c3c7aa.mockapi.io/productsall/")
+
 .then((res)=> res.json())
 .then((data)=>{
     console.log(data);
