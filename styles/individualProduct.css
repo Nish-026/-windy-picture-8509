@@ -1,0 +1,89 @@
+.card{
+    /* border: 1px solid red; */
+    width:60%;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card>div{
+    /* border: 1px solid black; */
+    width:70%;
+}
+/* .card-image{
+    border:0.5px solid rgb(62, 62, 62);
+} */
+.card>div:nth-child(2){
+    width:30%;
+}
+#quantity{
+    display: flex;
+    /* border:1px solid red; */
+    justify-content: space-between;
+}
+
+#quantity select{
+    width:40px;
+    background: hsla(48, 78%, 82%, 1);
+    border-radius: 20px 20px 20px 20px;;
+
+    
+}
+#quantity select:hover{
+    background: rgb(226, 142, 234);
+}
+
+.card img{
+    width:100%;
+    transition: transform .2s;
+}
+.card img:hover{
+    transform: scale(1.5);
+}
+.button_container{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+}
+.button_container button{
+    width:150px;
+    height:30px;
+    
+}
+#wishlist_btn img{
+    width:25px;
+}
+#wishlist_btn{
+    width:50px;
+    background-color: white;
+    border: none;
+}
+#addtocart_btn{
+    background: rgb(252, 212, 195);
+
+background: linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
+border:none;
+}
+#addtocart_btn:hover{
+    background: rgb(226, 142, 234);
+}
+#second_row{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: center;
+    color:grey
+}
+.card-body h4{
+    color: grey;
+
+}
+.card-body{
+    margin-left:2px;
+}
+

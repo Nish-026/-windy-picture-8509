@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Beaute</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    
+
+     <!----------------------------------------- Search Pop-up ------------------------------------------------->
+        <div class="search-popup" id="search-popup">
+            <button id="close-popoup">&#128473;</button>
+            <div>
+                <label for="input">Search for Products and Brands</label>
+                <input type="text">
+                <img src="./Images/search-violet.png" alt="">
+                <div>
+                    <div>
+                        <p>&#128338; Recent Searches</p>
+                    </div>
+                    <div>
+                        <p>Popular Products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-------------------------------------------------- Header Nav ----------------------------------------------->
+        <div id="header">
+            <div id="coupon">
+                <img src="./Images/logo_icon.png" alt="">
+                <!-- <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1543587824_logo.png" alt="Logo"> -->
+                <p>⭐⭐ Flat Rs. 100 OFF on your first order! ⭐⭐</p>
+                <p class="code">Use Code:<span>APPFIRST</span></p>
+                <button id="download">DOWNLOAD APP</button>
+                <button id="close-coupon">&#128473;</button>
+            </div>
+            <div class="upper-nav" id="upper-nav">
+                <a href="">&#128241;DOWNLOAD APP</a> | 
+                <a href="">SUPPORT</a> |
+                <a href="">TRACK ORDER</a>
+            </div>
+        </div>
+        <hr class="line">
+
+        <!------------------------------------------------ Navbar ----------------------------------------------->
+
+        <nav id="navbar">
+            <div>
+                <input type="text" placeholder="What are you looking for?" id="search-for">
+            </div>
+            <div>
+                <a href="./index.html">
+                    <img src="./Images/logo.png" alt="" id="logo1">
+                    <!-- <img src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt="" id="logo1"> -->
+                </a>
+                <a href="#">
+                    <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png" alt="" id="logo2">
+                </a>
+            </div>
+            <div>
+                <img src="./Images/fav.png" alt="" id="open-fav-page" onclick = "window.location.href = './login.html'">
+                <img src="./Images/profile.png" alt="" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+                <img src="./Images/cart.png" alt="" id="open-cart-page" onclick = "window.location.href = './card.html'">
+            </div>
+        </nav>
+
+        <!-- profile Dropdown -->
+
+        <img src="https://media4.ppl-media.com/mediafiles/ecomm/promo/1467114832_top-arrow.png" alt="" id="profile-dropdown-img" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+
+        <hr class="line">
+
+        <img src="./Images/search.png" alt="" id="search-btn">
+
+        <div id="profile-dropdown-div" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+            <button id="login-page">Sign in</button>
+            <p>New Customer? <span id="reg-page">Start here.</span></p>
+            <hr>
+            <a href="">Your Orders</a>
+            <a href="">Your Account</a>
+            <a href="">Elite Membership</a>
+            <a href="">Your Beauty Profile</a>
+            <a href="">Your Wishlist</a>
+            <a href="">Violet Credit</a>
+            <hr>
+            <p>Become a Seller?</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_xYcBU3GQ4wPmTbmYbcPy5CiRyogra1WCbwnLhGkbaC2yVQ/viewform"><span>Register Now.</span></a>
+        </div>
+
+
+        <!-- -------------------------------------------Dropdwon Navbar --------------------------------------------- -->
+
+
+        <div id="go-to-products-page">
+            <button class="go-to-products-btn" onclick="window.location.href = './primer.html'">Primer</button>
+            <button class="go-to-products-btn" onclick="window.location.href = './shampoo.html'">Shampoo</button>
+            <button class="go-to-products-btn" onclick="window.location.href = './adminLoginPage.html'">ADMIN</button>
+        </div>
+
+        <!-- <hr>
+
+        <div id="categories">
+            <p id="mybt"><i class="fas fa-bars"></i>SHOP CATEGORIES</p>
+            <p class="head">BRANDS</p>
+            <p class="head">NEW</p>
+            <p class="head">OFFERS</p>
+            <p class="head">NEW</p>
+            <p class="head">SPLURGE</p>
+            <p class="head">MEGAZINE</p>
+            <p class="head">ELITE OFFERS</p>    
+        </div> -->
+    
+    
+        <!-- The Modal -->
+        <!-- <div id="mymode" class="model"> -->
+    
+            <!-- Modal content -->
+            <!-- <div id="content">
+                <span class="close1">&times;</span> -->
+    
+                <!-- <div id="reg">
+                    <p class="line">Fragance</p> -->
+                    <!-- <p>Fragance</p> -->
+                    <!-- <p>MakeUp</p>
+                    <p>Skin Care</p>
+                    <p>Hair care</p>
+                    <p>Appliance</p> -->
+                    <!-- <p>Personal Care</p> -->
+                    <!-- <p>Mom & Baby</p>
+                </div> -->
+    
+    
+                <!-- <div id="sub">
+                    <div id="sub-categories">
+                        <h4>FRAGRANCE FOR WOMEN 7</h4>
+                        <a href="perfumes_women.html">Perfumes</a>
+                        <a href="deodorants_roll_women.html">Deodrants & Roll-ons</a>
+                        <a href="body_mist_women.html">Body Mists and Prays</a>
+                        <a href="perfume_creamed_women.html">perfumed creams and solid perfumes</a>
+                    </div>
+    
+                    <div id="sub-categories2">
+                        <h4>FRAGRANCE FOR MEN</h4>
+                        <a href="perfumes_men.html">Perfumes</a>
+                        <a href="deodarants_men.html">Deodrants & Roll-ons</a>
+                        <a href="colognes.html">Colognes</a>
+                        <a href="aftershaves.html">Aftershave</a>
+                    </div> -->
+    
+                <!-- </div>
+            </div> -->
+        <!-- </div> -->
+
+
+        <!-- ------------------------------------------Main Content Area --------------------------------------------------------->
+
+
+        <div id="main_content_area">
+            <div id="upper_half">
+                <div id="up_first_row"></div>
+                <div id="up_second_row">
+                    <div class="swiper swiper1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673609426_freegift_thickstrip_mov549_web.jpg"></div>
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1673609423_flat-rs100-appfirst-web-699.gif"></div>
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1673609419_ft-new-strip-web-1280-x-272.gif"></div>
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673609418_thick-strip-web.jpg"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                    </div>
+                </div>
+                <h2 id="category">CATEGORY STORES</h2>
+                <div id="up_third_row">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="slider2">
+                          <!-- Slides -->
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1658146523_50.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1658146523_clearance-sale.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1655448167_appliances-1.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1659003703_korean-beauty.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1655448165_gift-combo-1.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1669280328_makeup.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1655448166_fragrances-1.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1655448162_skincare-1.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1655448166_feminine-hygiene-1.jpg">
+                          <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1655448164_luxury-1.jpg">
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
+                <div id="up_fourth_row">
+                    <div class="swiper swiper1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673618925_price-drop-summer-web.gif?tr=f-gif"></div>
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673933775_best-deals-web.jpg"></div>
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673618927_web-.gif?tr=f-gif"></div>
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673618934_half-price-final-revised-gif-web.gif?tr=f-gif"></div>
+                          <div class="swiper-slide"><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1670927301_most-loved-on-purplle-web.gif?tr=f-gif"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                    </div>
+                </div>
+                <div id="up_fifth_row">
+                  <div><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673707064_mcaffeine-alia_coffee-shower-1476x1028.jpeg"></div>
+                  <div><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673768277_gv-banner_2-copy-2.jpg"></div>
+                  <div><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673875206_swiss-beauty_-spectacular-1476x1028-1.jpeg"></div>
+                  <div><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673949609_pu_apphp.jpg"></div>
+                  <div><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673939172_wow_rice-water-1476x1028.jpeg"></div>
+                  <div><img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673527374_faces_comffy-matte-mini-1476x1028.jpg"></div>
+                </div>
+                <div id="up_sixth_row">
+                  <div><img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1664791015_reminder-1280x100.gif"></div>
+                </div>
+            </div>
+
+            <div id="lower_half">
+
+           <!-- img dest -->
+
+            <div class="dest_img">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1663748349_har-brand-ka-destination_web.jpg" alt="">
+                <hr class="hr_tag"/>
+            </div>
+
+            <!-- LF-1 -->
+
+            <div class="lf-1_pro1">
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673608325_kaja-1200x1800.jpeg" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673706733_ucanbe-1200x1800.jpeg" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673706119_cuffs-and-lashes-1200x1800.jpeg" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673772653_daily-life-forever-1200x1800.jpeg" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673772653_my-glamm-1200x1800.jpeg" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673608325_insight-1200x1800.jpeg" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673893712_wella-professional-1200x1800.jpeg" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673710234_aya.png" alt="">
+               </div>
+               <div>
+                <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673706121_sugar-pop-1200x1800.jpeg" alt="">
+               </div>
+            </div>
+
+            <!-- Image slider multiple image-->
+
+
+
+             <!-- Image slider single image1-->
+
+             <div id="lh_img_slider1"></div>
+             
+
+            <!-- Get Free img -->
+
+             <div class="get_free_img">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1667480446_get-free-gifts-on-every-order_web.jpg" alt="">
+                <hr class="hr_tag"/>
+            </div>
+
+            <!-- Image slider multiple image-->
+
+            
+
+                 <!-- Image slider single image2-->
+
+                 <div id="lh_img_slider2"></div>
+             
+
+                <!-- img change-->
+
+                <div class="img-change">
+                    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1673531363_best-combo-deals-web.gif" alt="">
+                </div>
+
+
+                
+                 <!-- Image slider single image3-->
+
+                 <div id="lh_img_slider3"></div>
+             
+
+                  <!-- flat discount-->
+
+             <div class="flat-dis">
+                <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1667564389_flat-discounts-grab-now_web.jpg" alt="">
+                <hr class="hr_tag"/>
+            </div>
+
+              
+                 <!-- Image slider single image4-->
+
+
+                 <div id="lh_img_slider4"></div>
+
+
+                 <!--disc img -->
+
+                 <div class="disc">
+                    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1673587802_discover-all-products-on-pu-web.gif" alt="">
+                    <hr class="hr_tag"/>
+                </div>
+
+                  <!-- Elite-->
+
+                  <div class="elite">
+                    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1620711142_elite-web.png" alt="">
+                    <!-- <hr class="hr_tag"/> -->
+                </div>
+    
+                <!-- Image slider single image5-->
+
+                 <div id="lh_img_slider5"></div>
+
+ 
+                 <!-- /* ----------LF-2------- */ -->
+
+                 <div class="lf-2_pro2">
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:w-512,ar-26075-16659,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673874061_purito-360x230-1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:w-512,ar-26075-16659,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673874060_kaja-360x230-1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:w-512,ar-26075-16659,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673874060_round-lab-360x230-1.png" alt="">
+                    </div>
+                 </div>
+
+                 <!-- /* -------LF-3----- */ -->
+                 <h2>TOP BRAND FOR YOU</h2>
+                 <div class="lf-3_pro3">
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673767529_dot-key.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673599646_mac.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673599647_tfs.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673599645_esteelauder-copy.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673730912_myglamm-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673730909_daily-life-forever-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602496_vaseline-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602507_dove-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863420_renee-revised-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673603434_tresemme-728x992.jpeg" alt="">
+                     </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602485_nivea-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602493_sugar-pop-728x992.jpeg" alt="">
+                    </div> 
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863419_minimalist-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673730915_spinz-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673730914_pilgrim-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602510_joy-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602508_earth-rhytm-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863422_sesa-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602487_oziva-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602489_power-gummies-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673682994_la-girl-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863415_aqualogica-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602499_vlcc-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673607417_sanfe-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673607417_sanfe-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863419_lacto-calamine-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673730917_vedix-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602504_bella-vita-organics-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602502_ayuga-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602492_streat-wear-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863417_bare-anatomy-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673730911_meera-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863421_salon-in-a-box-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673602492_sirona-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863416_avarelle-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863414_acwell-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673730916_truthsome-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863420_purito-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673731610_plix-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673607431_kapiva-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673682997_chemist-at-play-728x992.jpeg" alt="">
+                    </div>
+                    <div>
+                        <img src="https://media6.ppl-media.com/tr:dpr-2/mediafiles/ecomm/misc/1673863418_khadi-natural-728x992.jpeg" alt="">
+                    </div>
+                 </div> 
+
+
+                  <!-- img2-->
+
+                  <div class="img2">
+                    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1639028230_alert-strip-web.jpg" alt="">
+                    <!-- <hr class="hr_tag"/> -->
+                </div>
+
+                
+                  <!-- img3-->
+
+                  <div class="img3">
+                    <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1662556480_benefit-icons-strip-web.jpg" alt="">
+                    <!-- <hr class="hr_tag"/> -->
+                </div>
+
+                
+             <!-- LF-4 -->
+
+               <div class="lf-4">
+                <div>
+                    <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247950_secure-payment.jpg" alt="">
+                    <div>
+                        <h2>100% Secure Payment</h2>
+                        <p>All major credit & debit cards accepted.</p>
+                    </div>
+                </div>
+                <div>
+                   <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247975_beauty-assistant.jpg" alt="">
+                   <div>
+                       <h2>Beauty Assistant</h2>
+                       <p>Tell me what you are looking for and i will work my magic to help you find your perfect match.</p>
+                   </div>
+                </div>
+                <div>
+                    <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247997_help-center.jpg" alt="">
+                    <div>
+                        <h2>Help Center</h2>
+                        <p>Got a question? Look no further. Because FAQs or submit your query.</p>
+                    </div>
+                </div>
+             </div> 
+
+
+            <!-- Lower part End -->
+            </div>
+
+        </div>
+
+
+        <!---------------------------------------------- Footer --------------------------------------------------------->
+
+        
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>PURPPLE</h4>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Carrers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>PURPPLE BUSINESS</h4>
+                            <ul>
+                                <li><a href="#">Sell On Purpple</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>POLICY INFO</h4>
+                            <ul>
+                                <li><a href="#">Privicy Policy</a></li>
+                                <li><a href="#">Terms Of Use</a></li>
+                                <li><a href="#">Return & Cancellation Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>NEED HELP</h4>
+                            <ul>
+                                <li><a href="#">FAQ's</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </footer>
+
+
+            <footer class="footer2">
+                <div class="first">
+                    <h2>PAYMENT</h2>
+                <span>
+                    <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1499177379_tt.jpg" alt="">
+                </span>
+                </div>
+                <div class="secnd">
+                    <h2>CONNECT</h2>
+                    <span id="social">
+                        <div> <a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                        <div> <a href="#"><i class="fab fa-twitter"></i></a></div>
+                        <div> <a href="#"><i class="fab fa-instagram"></i></a></div>
+                        <div> <a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                    </span>
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- ------------------------------------------------ Js Scripts --------------------------------------------------------->
+
+
+
+    <script>
+
+        
+            function new1() {
+                document.getElementById("popup-1").classList.toggle("active");
+        
+            }
+        
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            var span = document.getElementsByClassName("close")[0];
+        
+        
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+        
+        
+            span.onmouseout = function () {
+                modal.style.display = "none";
+            }
+        
+        
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        
+            var moda = document.getElementById("mymode");
+        
+            // Get the button that opens the modal
+            var btn1 = document.getElementById("mybt");
+        
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close1")[0];
+        
+            // When the user clicks on the button, open the modal
+            btn1.onmouseover = function () {
+                moda.style.display = "block";
+            }
+        
+            // When the user clicks on <span> (x), close the modal
+            span.onmouseout = function () {
+                moda.style.display = "none";
+            }
+        
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == moda) {
+                    moda.style.display = "none";
+                }
+            }
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper1 = new Swiper('.swiper1', {
+        loop: true,
+        autoplay:{
+            delay:2000,
+            disableOnInteraction: false,
+        },
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+        },
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        
+        });
+         
+    </script>
+    <script>
+  
+        let uh_first_row_Images = [
+            "https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1669182865_magical-makeup-guide-web.gif",
+            "https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673768282_webs-banner-copy-2.jpg",
+            "https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673707063_mcaffeine-alia_coffee-shower-2596x836.jpeg",
+            "https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2,f-gif/mediafiles/ecomm/misc/1673671978_hp-web-2.gif",
+            "https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1673866064_maybelline_web_hp.jpg"
+          ];
+          
+          
+          window.addEventListener("load", function () {
+            start();
+          });
+          
+          
+          
+          let i = 0;
+          function start() {
+        
+            let images = uh_first_row_Images
+            let container = document.getElementById("up_first_row");
+        
+            let img = document.createElement("img")
+            if(i==images.length){
+                i=0;
+            }
+            img.src= images[i]
+            container.append(img);
+            i++;
+            setInterval(function(){
+        
+                if(i>=images.length){
+                    i=0;
+                }
+                container.innerHTML=null;
+                let img = document.createElement("img")
+                img.src= images[i]
+                container.append(img);
+                i++;
+            },3000)
+        
+        }
+        
+        const carousel = document.querySelector(".slider2"),
+        firstImg = carousel.querySelectorAll("img")[0],
+        arrowIcons = document.querySelectorAll("#up_third_row i");
+        
+        let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+        
+        const showHideIcons = () => {
+            // showing and hiding prev/next icon according to carousel scroll left value
+            let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+            arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+            arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+        }
+        
+        arrowIcons.forEach(icon => {
+            icon.addEventListener("click", () => {
+                let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+                // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+                carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+                setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+            });
+        });
+        
+        const autoSlide = () => {
+            // if there is no image left to scroll then return from here
+            if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+        
+            positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+            let firstImgWidth = firstImg.clientWidth + 14;
+            // getting difference value that needs to add or reduce from carousel left to take middle img center
+            let valDifference = firstImgWidth - positionDiff;
+        
+            if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+                return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+            }
+            // if user is scrolling to the left
+            carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+        }
+        
+        const dragStart = (e) => {
+            // updatating global variables value on mouse down event
+            isDragStart = true;
+            prevPageX = e.pageX || e.touches[0].pageX;
+            prevScrollLeft = carousel.scrollLeft;
+        }
+        
+        const dragging = (e) => {
+            // scrolling images/carousel to left according to mouse pointer
+            if(!isDragStart) return;
+            e.preventDefault();
+            isDragging = true;
+            carousel.classList.add("dragging");
+            positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+            carousel.scrollLeft = prevScrollLeft - positionDiff;
+            showHideIcons();
+        }
+        
+        const dragStop = () => {
+            isDragStart = false;
+            carousel.classList.remove("dragging");
+        
+            if(!isDragging) return;
+            isDragging = false;
+            autoSlide();
+        }
+        
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("touchstart", dragStart);
+        
+        document.addEventListener("mousemove", dragging);
+        carousel.addEventListener("touchmove", dragging);
+        
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("touchend", dragStop);
+        
+        
+        
+          
+    </script>
+    <script src="/scripts/index.js"></script>
+    <script src="./scripts/login.js"></script>
+</body>
+</html>

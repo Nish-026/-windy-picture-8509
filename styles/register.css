@@ -1,0 +1,80 @@
+#register-form-div{
+    width: 30%;
+    margin: auto;
+    margin-top: -300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 30px;
+}
+form > p{
+    font-size: 22px;
+}
+form > input{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid rgb(220, 219, 219); 
+    font-size: 16px;
+}
+form > input[type = "radio"]{
+    display: inline;
+    width: 20px;
+    height: 15px;
+    accent-color: #ff147b;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+form > input[type = "submit"]{
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ff147b;
+    color: white;
+    cursor: pointer;
+}
+form > a{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff147b;
+    cursor: pointer;
+}
+#close-reg{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    float: right;
+    transform: translate(-500px, -300px);
+    border: none;
+    font-size: 22px;
+}
+#verify-number{
+    color: #ff147b;
+    float: right;
+    transform: translate(0px, -30px);
+    cursor: pointer;
+}
+#otp{
+    display: none;
+}
+#show-password{
+    color: #ff147b;
+    float: right;
+    transform: translate(0px, -30px);
+    cursor: pointer;  
+}
+#seconds{
+    float: right;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+.footer{
+    margin-top: 300px;
+}

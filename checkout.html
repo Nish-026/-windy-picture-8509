@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta charset = "UTF-8" />
+	<title>Checkout</title>
+	<link rel="stylesheet" href="./css/Top.css">
+	<link rel="stylesheet" href="./styles/Checkout.css">
+
+	<style>
+		#second {
+
+			height: 500px;
+
+		}
+
+		#first {
+
+			height: 500px;
+		}
+
+		#MainPage {
+			display: grid;
+			width: 80%;
+			grid-template-columns: 55% 30%;
+			grid-gap: 5%;
+			margin-top: 140px;
+			margin-left: auto;
+			margin-right: auto;
+
+
+		}
+
+		#total {
+			font-weight: bold;
+		}
+
+		#tot {
+			font-weight: bold;
+			color: black;
+		}
+		#gif{
+			margin-left: 30%;
+		}
+		#msg{
+			display: none;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="top-box">
+		<div><a href="AfterLogin.html"><img id="logo"
+					src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" /></a>
+		</div>
+
+
+
+
+
+
+
+		<div id="MainPage">
+
+			<div id="first">
+
+
+				<div id="green">
+
+
+					<p id="in">Credit/Debit Card </p>
+
+					<form action="Order.html" >
+						<div id="debit">
+							<input type="text" placeholder="Name on card" required id="name">
+							<div id="card-top">
+								<input type="text" placeholder="Card number" id="card" required/>
+								<input type="text" placeholder="CVV" id="input" required/>
+							</div>
+							<div id="card-bottom">
+								<input type="text" placeholder="Expiry MM" id="input1" required>
+								<input type="text" placeholder="Expiry YY" id="input2" required>
+							</div>
+
+						</div>
+
+						<div>
+							<div id="checkboxx">
+								<input type="checkbox" value="checked">
+								<p>Save Card for future use</p>
+							</div>
+							<div id="gif"></div>
+							<div id="msg">Please fill all fields</div>
+							<button onclick="makepay(event)" id="bt">PAY</button>
+						</div>
+					</form>
+					
+				</div>
+
+
+
+
+
+
+
+
+
+			</div>
+
+			<div id="second">
+				<div id="line"></div>
+
+
+
+				<h3>Price Details:</h3>
+
+				<div id="new1">
+					<p>Total MRP</p>
+					<p id="rupee"></p>
+				</div>
+
+
+				<div id="new1">
+					<p>Sub Total</p>
+					<p id="subtotal"></p>
+				</div>
+
+
+
+				<div id="new1">
+					<p class>Shipping Charges</p>
+					<p id="lal">Free</p>
+				</div>
+
+				<div id="line"></div>
+
+				<div id="new1">
+					<p id="tot">Order Total</p>
+					<p id="total"></p>
+				</div>
+
+
+
+
+
+
+
+
+			</div>
+
+
+
+		</div>
+
+</body>
+
+</html>
+
+<script>
+
+let card_data = JSON.parse(localStorage.getItem("cart-list"));
+
+var total = 0;
+var totalitem = 0;
+if (card_data == null) {
+	card_data = [];
+} else {
+	for (let i = 0; i < card_data.length; i++) {
+		// console.log(card_data[i].price);
+		let out = card_data[i].price;
+		total += total + Number(out);
+		totalitem += totalitem + Number(1);
+	}
+}
+
+var total_h1 = document.getElementById("rupee");
+
+if (total_h1) {
+
+	total_h1.innerHTML = "₹" + total;
+
+}
+
+	var btn = document.getElementById('bt');
+	//btn.addEventListener('click',makepay);
+	function makepay(e) {
+		e.preventDefault();
+
+	var tot = document.getElementById("rupee");
+    var subtotal = document.getElementById("subtotal");
+    var total_order = document.getElementById("total");
+    var bt = document.getElementById("bt");
+    subtotal.innerHTML = `&#x20B9;${total}`;
+    total_order.innerHTML = `&#x20B9;${total}`;
+    bt.innerHTML = `PAY &#x20B9;${total}`;
+     tot.innerHTML = `&#x20B9;${total}`;
+
+
+		var name = document.getElementById("name").value;
+		var card = document.getElementById("card").value;
+		var input = document.getElementById("input").value;
+		var input1 = document.getElementById("input1").value;
+		var input2 = document.getElementById("input2").value;
+	
+		if(name.length==0 || card.length==0 || input.length==0 || input1.length==0 ||input2.length==0 ){
+			var x =	document.getElementById("msg");
+			x.style.display="block";
+			x.style.color="red";
+
+		}else{
+			var x =	document.getElementById("msg");
+			x.style.display="none";
+			var img = document.createElement("img");
+
+			img.src = "https://1.bp.blogspot.com/-TUnIV6lCpUI/Ug5AjWt-L5I/AAAAAAAABRY/X5083DNXw28/s1600/LoadingWait.gif";
+			var src = document.getElementById("gif");
+			src.appendChild(img)
+
+
+			card_data = [];
+			localStorage.setItem("cart-list", JSON.stringify(card_data));
+
+			setTimeout(function () {
+				window.location.href="Order.html";
+			}, 2000);
+		}	
+	}
+
+
+
+</script>

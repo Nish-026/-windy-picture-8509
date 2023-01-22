@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Violet Beaute</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+<body id="body">
+    <!---------------------------------------------------- Header --------------------------------------------------------->
+    <div id="header-content">
+
+        <!----------------------------------------- Search Pop-up ------------------------------------------------->
+           <div class="search-popup" id="search-popup">
+               <button id="close-popoup">&#128473;</button>
+               <div>
+                   <label for="input">Search for Products and Brands</label>
+                   <input type="text">
+                   <img src="./Images/search-violet.png" alt="">
+                   <div>
+                       <div>
+                           <p>&#128338; Recent Searches</p>
+                       </div>
+                       <div>
+                           <p>Popular Products</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+   
+       <!-------------------------------------------------- Header Nav ----------------------------------------------->
+
+           <div id="header">
+               <div id="coupon">
+                   <img src="./Images/logo_icon.png" alt="">
+                   <!-- <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1543587824_logo.png" alt="Logo"> -->
+                   <p>⭐⭐ Flat Rs. 100 OFF on your first order! ⭐⭐</p>
+                   <p class="code">Use Code:<span>APPFIRST</span></p>
+                   <button id="download">DOWNLOAD APP</button>
+                   <button id="close-coupon">&#128473;</button>
+               </div>
+               <div class="upper-nav" id="upper-nav">
+                   <a href="">&#128241;DOWNLOAD APP</a> | 
+                   <a href="">SUPPORT</a> |
+                   <a href="">TRACK ORDER</a>
+               </div>
+           </div>
+           <hr class="line">
+   
+           <!------------------------------------------------ Navbar ----------------------------------------------->
+   
+           <nav id="navbar">
+               <div>
+                   <input type="text" placeholder="What are you looking for?" id="search-for">
+               </div>
+               <div>
+                   <a href="./index.html">
+                       <img src="./Images/logo.png" alt="" id="logo1">
+                       <!-- <img src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt="" id="logo1"> -->
+                   </a>
+                   <a href="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png" alt="" id="logo2">
+                   </a>
+               </div>
+               <div>
+                   <img src="./Images/fav.png" alt="">
+                   <img src="./Images/profile.png" alt="" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+                   <img src="./Images/cart.png" alt="">
+               </div>
+           </nav>
+   
+           <!-- profile Dropdown -->
+   
+           <img src="https://media4.ppl-media.com/mediafiles/ecomm/promo/1467114832_top-arrow.png" alt="" id="profile-dropdown-img" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+   
+           <hr class="line">
+   
+           <img src="./Images/search.png" alt="" id="search-btn">
+           
+           <div id="profile-dropdown-div" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+               <button>Sign in</button>
+               <p>New Customer? <span>Start here.</span></p>
+               <hr>
+               <a href="">Your Orders</a>
+               <a href="">Your Account</a>
+               <a href="">Elite Membership</a>
+               <a href="">Your Beauty Profile</a>
+               <a href="">Your Wishlist</a>
+               <a href="">Violet Credit</a>
+               <hr>
+               <p>Become a Seller?</p>
+               <a href=""><span>Register Now.</span></a>
+           </div>
+       </div>
+
+
+    <!------------------------------------- Register Account ------------------------------------------->
+
+    <button id="close-reg" onclick="window.location.href = './index.html'">&#128473;</button>
+    <div id="register-form-div">
+        <form action="" id="registration-form">
+            <h2>Welcome Aboard</h2>
+            <p>Lets know you the better and make sure that you never lose access to your account.</p>
+            <input type="text" placeholder="Enter your name. *" id="name">
+            <input type="text" placeholder="Enter email. *" id="email">
+
+            <input type="number" placeholder="Mobile No. *" id="mobile_number">
+            <span id="verify-number">VERIFY</span>
+
+            <input type="number" placeholder="Enter OTP. *" id="otp">
+            <span id="seconds">15s</span>
+
+            <input type="password" placeholder="Create password. *" id="password">
+            <span id="show-password">SHOW</span>
+
+            <input type="radio" value="male" name="gender" checked>
+            <label for="male">Male</label>
+
+            <input type="radio" value="female" name="gender">
+            <label for="female">Female</label>
+
+            <input type="submit" value="SUBMIT">
+            <a href="./login.html">	&#8592; Back to Login</a>
+
+        </form>
+    </div>
+
+
+
+    <!-- ---------------------------------- Footer -------------------------------------- -->
+
+    <div id="footer-content">
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>PURPPLE</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Carrers</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>PURPPLE BUSINESS</h4>
+                        <ul>
+                            <li><a href="#">Sell On Purpple</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>POLICY INFO</h4>
+                        <ul>
+                            <li><a href="#">Privicy Policy</a></li>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Return & Cancellation Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>NEED HELP</h4>
+                        <ul>
+                            <li><a href="#">FAQ's</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+
+
+        <footer class="footer2">
+            <div class="first">
+                <h2>PAYMENT</h2>
+            <span>
+                <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1499177379_tt.jpg" alt="">
+            </span>
+            </div>
+            <div class="secnd">
+                <h2>CONNECT</h2>
+                <span id="social">
+                    <div> <a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                    <div> <a href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div> <a href="#"><i class="fab fa-instagram"></i></a></div>
+                    <div> <a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                </span>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/login.js"></script>
+    <script src="./scripts/register.js"></script>
+</body>
+</html>
