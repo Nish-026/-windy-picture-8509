@@ -2,19 +2,16 @@
 #coupon{
     width: 100%;
     display: grid;
-    grid-template-columns: 0px 350px 200px 120px 30px;
-    padding: 0px 100px;
+    grid-template-columns: 10% 28% 43% 12% 0%;
     height: 60px;
     margin-top: -8px;
-    margin-left: -8px;
-    gap: 60px;
     background-color: #f9d3e8;
     align-items: center;
-    /* position: absolute; */
 }
 #coupon > img{
     width: 50px;
-    height: 40px;    
+    height: 40px;   
+    margin-left: 100px; 
 }
 #download{
     width: 160px;
@@ -26,7 +23,6 @@
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    margin-left: 400px;
     border: none;
 }
 #close-coupon{
@@ -37,7 +33,6 @@
     margin-top: -10px;
     background-color: transparent;
     cursor: pointer;
-    margin-left: 400px;
 }
 .code{
     border: 2px dashed red;
@@ -89,11 +84,11 @@
 #navbar{
     width: 90%;
     margin: auto;
-    height: 100x;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    /* padding: 10px; */
 }
 #navbar > div{
     padding: 0px 20px;
@@ -119,6 +114,7 @@
 #logo1{
     width: 100px;
     height: 75px;
+    margin-top: 20px;
 }
 #logo2{
     width: 40px;
@@ -130,7 +126,7 @@
 }
 #search-btn{
     width: 30px;
-    transform: translate(350px, -100px);
+    transform: translate(350px, -80px);
     position: relative;
 }
 
@@ -139,21 +135,22 @@
 #profile-dropdown-img{
     width: 20px;
     position: relative;
-    transform: translate(1308px, -40px);
+    transform: translate(1308px, -18px);
     visibility: hidden;
 }
 
-/* ----------------------------- Profile Dropdown div ---------------------------- */
+/* ----------------------------- Profile Dropdown div ---------------------------------------- */
 
 #profile-dropdown-div{
     width: 175px;
     position: relative;
-    transform: translate(1220px, -95px);
+    transform: translate(1210px, -70px);
     background-color: whitesmoke;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-size: 14px;
     visibility: hidden;
+    position: relative;
 }
 #profile-dropdown-div span{
     color: #ff147b;
@@ -178,7 +175,7 @@
     padding: 3px 0px;
 }
 #profile-dropdown-div > a:hover{
-    color: rgb(227, 75, 227);
+    color: #ff147b;
 }
 /* ------------------------------------- Search Popup -------------------------------------------- */
 
@@ -186,10 +183,11 @@
     width: 100%;
     border: 1px solid white;
     background-color: white;
-    transform: translate(0%, 0%);
     position: absolute;
-    visibility: hidden;
-    top: -60%;
+    visibility: hidden; 
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
 }
 .open-popup{
     visibility: visible;
@@ -225,6 +223,7 @@
     outline: none;
     border: none;
     border-bottom: 1px solid #ff147b;
+    font-size: 16px;
 }
 .search-popup > div > img{
     transform: translate(1000px, -35px);
@@ -249,4 +248,3 @@
 .search-popup > div > div > div {
     width: 350px;
 }
-
