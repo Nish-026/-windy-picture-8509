@@ -11,7 +11,7 @@
 <body>
     <div>
         <div id="product_first_row">
-            <div id="search_box">
+-windy-picture-8509/scripts            <div id="search_box">
                 <div class="input-box">
                     <input type="text" placeholder="Search..." id="search_box_">
                     <span id="search_icon">
@@ -125,15 +125,12 @@ searchbutton.addEventListener("click",()=>{
 })
 
 function functionalitiesPrimer(data){
-
-let Primers_obj= data.map((primer)=>({
-
+let Primers_obj = data.map((primer)=>({
     id:primer.id,
-    title: primer.description,
-    imageURL: primer.image,
-    cost: "Rs."+primer.price
-
-}));
+    titler:primer.description,
+    imageURL:primer.image,
+    cost:"Rs. "+primer.price
+}))
 renderCardList(Primers_obj)
 
 }
