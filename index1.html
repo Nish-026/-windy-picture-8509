@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index1.css">
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="coupon">
+                <img id="coupon_img" src="./Images/logo_icon.png" alt="">
+                <!-- <img src="https://media6.ppl-media.com/mediafiles/ecomm/home/1543587824_logo.png" alt="Logo"> -->
+                <p id="coupon_data">⭐⭐ Flat Rs. 100 OFF on your first order! ⭐⭐</p>
+                <p class="code">Use Code:<span>APPFIRST</span></p>
+                <button id="download">DOWNLOAD APP</button>
+                <button id="close-coupon">&#128473;</button>
+            </div>
+            <div class="upper-nav" id="upper-nav">
+                <a href="">&#128241;DOWNLOAD APP</a> |
+                <a href="">SUPPORT</a> |
+                <a href="">TRACK ORDER</a>
+            </div>
+            <hr>
+            <nav id="navbar">
+                <div>
+                    <input type="text" placeholder="What are you looking for?" id="search-for"><img id="search_icon" src="https://cdn-icons-png.flaticon.com/512/54/54481.png">
+                </div>
+                <div>
+                    <a href="./index.html">
+                        <img src="./Images/logo.png" alt="" id="logo1">
+                        <!-- <img src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt="" id="logo1"> -->
+                    </a>
+                    <a href="#">
+                        <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png" alt="" id="logo2">
+                    </a>
+                </div>
+                <div>
+                    <img src="./Images/fav.png" alt="" id="open-fav-page" onclick = "window.location.href = './login.html'">
+                    <img src="./Images/profile.png" alt="" id="profile_logo"onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+                    <img src="./Images/cart.png" alt="" id="open-cart-page" onclick = "window.location.href = './card.html'">
+                </div>
+            </nav>
+            <div id="profile_drop_down">
+                <img src="https://media4.ppl-media.com/mediafiles/ecomm/promo/1467114832_top-arrow.png" alt="" id="profile-dropdown-img" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+
+                <hr class="line">
+        
+                <div id="profile-dropdown-div" onmouseover = "profileDropdown()" onmouseout="profileDropdownclose()">
+                    <button id="login-page">Sign in</button>
+                    <p>New Customer? <span id="reg-page"><a href="" id="regis">Start here.</a></span></p>
+                    <hr>
+                    <a href="">Your Orders</a>
+                    <a href="">Your Account</a>
+                    <a href="">Elite Membership</a>
+                    <a href="">Your Beauty Profile</a>
+                    <a href="">Your Wishlist</a>
+                    <a href="">Violet Credit</a>
+                    <hr>
+                    <p>Become a Seller?</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_xYcBU3GQ4wPmTbmYbcPy5CiRyogra1WCbwnLhGkbaC2yVQ/viewform"><span>Register Now.</span></a>
+                </div>
+            </div>
+            <div id="menu-container">
+                <ul>
+                    <li><a href="#">NEW AND NOW</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">BATH AND SHOWER</a></li>
+                            <li><a href="product.html">ALL NEW ARRIVALS</a></li>
+                            <li><a href="product.html">AROMATHERAPY</a></li>                        
+                            <li><a href="product.html">HAND SOAPS</a></li>                        
+                            <li><a href="product.html">MEN'S SHOP</a></li>                        
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="#">BODY CARE</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="product.html">AROMATHERAPY</a></li>
+                                <li><a href="product.html">BATH AND SHOWER</a></li>
+                                <li><a href="product.html">BODY CARE</a></li>                        
+                                <li><a href="product.html">FRAGRANCE</a></li>                        
+                                <li><a href="product.html">MEN'S</a></li>                        
+                                <li><a href="product.html">MOISTURIZERS</a></li>                        
+                                <li><a href="product.html">GIFT SETS</a></li>                        
+                                <li><a href="product.html">BODY CARE OFFERS</a></li>                        
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">HAND SOAP AND CLEANSERS</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="product.html">ALL FRAGRANCE</a></li>
+                                <li><a href="product.html">PERFUME AND COLOGNE</a></li>                       
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">HOME FRAGRANCE</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="product.html">ALL FRAGRANCE</a></li>
+                                <li><a href="product.html">BODY SPRAYS AND MISTS</a></li>
+                                <li><a href="product.html">PERFUME AND COLOGNE</a></li>                                              
+                            </ul>
+                        </div></li>
+                    <li><a href="#">GIFTS</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="product.html">BODY CARE GIFT SETS</a></li>                       
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">TOP OFFERS</a></li>
+                    <li><a href="#">GET INSPIRED</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./scripts/index1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

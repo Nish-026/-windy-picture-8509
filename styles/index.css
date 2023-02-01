@@ -14,6 +14,9 @@
 }
 
 /* --------------------------------- Css for Coupon alert ---------------------------------- */
+.Header{
+    border:1px solid red;
+}
 #coupon{
     width: 100%;
     display: grid;

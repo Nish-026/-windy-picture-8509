@@ -1,0 +1,197 @@
+#header{
+    border:1px solid red;
+}
+#coupon{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 28% 43% 12% 0%;
+    height: 70px;
+    margin-top: -8px;
+    background-color: #f9d3e8;
+    align-items: center;
+}
+#coupon > img{
+    width: 50px;
+    height: 40px;   
+    margin-left: 100px; 
+}
+#download{
+    width: 160px;
+    height: 40px;
+    background-color: #ff147b;
+    color: white;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+#close-coupon{
+    width: 30px;
+    font-size: 20px;
+    border: none;
+    padding: 7px 12px;
+    margin-top: -10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.code{
+    border: 2px dashed red;
+    margin: auto;
+    font-size: 17px;
+    background-color: white;
+    margin-top: 15px;
+    padding: 5px 10px;
+    margin-left: -5px;
+}
+.code span{
+    color: red;
+}
+#coupon_data{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+.upper-nav{
+    width: 80%;
+    margin: auto;
+    height: 40px;
+    text-align: right;
+    padding: 10px 0px 0px 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.hide-upper-nav{
+    visibility: hidden;
+}
+.upper-nav > a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 10px 5px;
+    align-content: center;
+}
+.upper-nav > a:hover{
+    color: blue;
+}
+.line{
+    width: 100%;
+    border: none;
+    height: 0.5px;
+    background: rgb(234, 232, 232);
+}
+#navbar{
+    display:flex;
+    width:80%;
+    margin:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar>div{
+}
+#navbar>div:nth-child(1)>img{
+    margin-left: 10px;
+    width:20px
+}
+#logo1{
+    width:100px;
+}
+#logo2{
+    width:40px;
+}
+#search-for{
+    width:250px;
+}
+#profile_drop_down{
+    margin-top:-20px;
+    border:1px solid red;
+    width:200px;
+    margin-left:74.5%;
+    text-align: center;
+    background-color:white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: none;
+    position: fixed;
+    border-radius: 5px 5px 5px 5px;
+}
+#profile_logo:hover #profile_drop_down{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+#profile-dropdown-img{
+    margin: auto;
+}
+#login-page{
+    width:90%;
+    justify-content: center;
+    background-color:rgb(164, 131, 227);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+#profile-dropdown-div a{
+    display: block;
+    color:rgb(56, 56, 56);
+    text-decoration: none;
+}
+#profile-dropdown-div a:hover{
+    color:rgb(164, 131, 227);;
+}
+#profile-dropdown-div #regis{
+    display:inline;
+    color:#ff147b;
+}
+#profile-dropdown-div a:last-child{
+    margin-top:-10px;
+    color:#ff147b;
+}
+
+#menu-container{
+    text-align: center;
+    border:5px solid green;
+    
+}
+#menu-container ul{
+    display:inline-flex;
+    list-style: none;
+    margin: auto;
+}
+#menu-container ul li{
+    width: 120px;
+    font-size: small;
+    margin:15px;
+}
+#menu-container ul li a{
+    text-decoration: none;
+    color:black;
+}
+#menu-container ul li:hover{
+ text-decoration: underline;
+ text-decoration-color: rgb(249, 211, 197);
+ text-decoration-thickness: 1px;
+}
+
+.sub-menu-1{
+    display:none;
+    width: 100%;
+}
+#menu-container ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top:15px;
+    margin-left: -15px;
+    color: white;
+    background-color: rgb(250, 250, 250);
+}
+#menu-container ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:20px;
+}
+#menu-container>div>a:hover .sub-menu-1 ul li{
+    width:400px;
+    color:black;
+}
